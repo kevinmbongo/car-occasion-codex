@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-green-800 p-10">
+  <main class="bg-background p-10">
     <v-car-card
       v-for="car in carList"
       :key="car.id"

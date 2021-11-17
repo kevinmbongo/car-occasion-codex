@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-red-500">Copyright Kévin</footer>
+  <footer class="bg-primary">Copyright Kévin</footer>
 </template>
 
 <script>
