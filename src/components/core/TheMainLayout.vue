@@ -3,8 +3,7 @@
     <v-car-card
       v-for="car in carList"
       :key="car.id"
-      :brand="car.brand"
-      :model="car.model"
+      :infos-list="car.infosList"
       :image="car.image"
     />
   </main>
