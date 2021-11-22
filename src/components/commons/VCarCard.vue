@@ -3,7 +3,7 @@
     <div class="grid grid-cols-12 gap-10">
       <div class="col-span-5">
         <img
-          class="relative rounded-3xl object-cover w-full h-full -top-5 right-5"
+          class="relative rounded-3xl object-cover w-full h-full -top-6 right-5"
           :src="image"
           :alt="infosList.brand"
         />
@@ -52,12 +52,12 @@ export default {
       const values = Object.values(this.infosList)
 
       const translations = {
-        brand: 'Marque :',
-        models: 'Modèle :',
-        prices: 'Prix :',
-        energy: 'Énergie :',
-        years: 'Année :',
-        kilometers: 'Kilomètrage :',
+        brand: 'Brand :',
+        models: 'Model :',
+        prices: 'Prices :',
+        energy: 'Energy :',
+        years: 'Years :',
+        kilometers: 'Kilometers :',
       }
 
       return keys.map((key, index) => ({

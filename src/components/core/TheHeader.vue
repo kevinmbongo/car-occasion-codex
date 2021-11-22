@@ -1,15 +1,17 @@
 <template>
-  <header class="bg-black fixed w-full top-0 z-50">
-    <div class="md:container mx-auto py-1">
-      <img src="@/assets/image/loogsvg.png" alt="logo" width="150px" />
+  <header class="flex justify-center">
+    <div>
+      <img
+        src="@/assets/images/car-occasion-codex-logo.png"
+        width="130"
+        alt="Logo"
+      />
     </div>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'VHeaderNav',
+  name: 'TheHeader',
 }
 </script>
-
-<style scoped></style>

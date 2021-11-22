@@ -1,6 +1,6 @@
 <template>
-  <footer class="bg-black text-center py-4">
-    Copyright © <a class="underline" href="">Groupe Kévin's </a>- Tous droits
+  <footer class="bg-paper flex justify-center">
+    Copyright © <a href="#" class="underline"> Kévin MBONGO </a> - Tous droits
     réservés
   </footer>
 </template>
@@ -10,3 +10,12 @@ export default {
   name: 'TheFooter',
 }
 </script>
+
+<style scoped>
+@screen md {
+  footer {
+    margin-left: 400px;
+    height: 54px;
+  }
+}
+</style>

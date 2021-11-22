@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-background p-10">
+  <main class="bg-background pl-16 pr-10 py-5 min-h-screen">
     <v-car-card
       v-for="car in carList"
       :key="car.id"
@@ -11,9 +11,10 @@
 
 <script>
 import VCarCard from '@/components/commons/VCarCard'
+import '@/assets/global.scss'
 
 export default {
-  name: 'TheMainLayout',
+  name: 'TheMain',
 
   components: { VCarCard },
 
@@ -25,3 +26,12 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+@screen md {
+  main {
+    margin-left: 400px;
+    min-height: 100vh;
+  }
+}
+</style>

@@ -8,10 +8,10 @@ module.exports = {
         body: ['Roboto', 'sans-serif'],
       },
       colors: {
-        primary: '#6000EE',
+        primary: '#090909',
         secondary: '#6100EE',
-        background: '#121212',
-        paper: '#292929',
+        background: '#F9F9F9',
+        paper: '#F1F1F1',
       },
     },
   },
