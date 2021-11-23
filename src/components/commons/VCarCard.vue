@@ -53,11 +53,11 @@ export default {
 
       const translations = {
         brand: 'Brand :',
-        models: 'Model :',
-        prices: 'Prices :',
+        model: 'Models :',
+        price: 'Prices :',
         energy: 'Energy :',
-        years: 'Years :',
-        kilometers: 'Kilometers :',
+        year: 'Years :',
+        kilometer: 'Kilometers :',
       }
 
       return keys.map((key, index) => ({

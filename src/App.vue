@@ -27,8 +27,8 @@ export default {
         id: 1,
         infosList: {
           brand: 'Peugeot',
-          models: '207',
-          prices: 14000,
+          model: '207',
+          price: 14000,
           energy: 'Gasoiline',
           years: 2019,
           kilometers: 12400,
@@ -40,8 +40,8 @@ export default {
         id: 2,
         infosList: {
           brand: 'Citroen',
-          models: 'swift',
-          prices: 14000,
+          model: 'swift',
+          price: 57000,
           energy: 'Gasoiline',
           years: 2019,
           kilometers: 12400,
@@ -53,8 +53,8 @@ export default {
         id: 3,
         infosList: {
           brand: 'Citroen',
-          models: 'C4',
-          prices: 14000,
+          model: 'C4',
+          price: 900,
           energy: 'Gasoiline',
           years: 2019,
           kilometers: 12400,
@@ -88,10 +88,12 @@ export default {
     ],
 
     filterCarList: [],
+    filterPricesList: [],
   }),
 
   created() {
     this.filterCarList = this.carlist
+    this.filterPricesList = this.carlist
   },
 
   methods: {
@@ -106,11 +108,19 @@ export default {
           return (
             car.infosList.brand.toLowerCase() ===
               userFilters.selectedBrand.toLowerCase() &&
-            car.infosList.models.toLowerCase() ===
+            car.infosList.model.toLowerCase() ===
               userFilters.selectedModels.toLowerCase()
           )
         }
       })
+    },
+
+    pricesFilter(userFilters) {
+      this.filterPricesList = this.carlist.filter(
+        (car) =>
+          car.infosList.price >= userFilters.pricesMin &&
+          car.infosList.price <= userFilters.pricesMax
+      )
     },
   },
 }
