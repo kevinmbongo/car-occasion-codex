@@ -141,6 +141,8 @@ export default {
       ford: 'Ford',
       hyundai: 'Hyundai',
       volkswagen: 'Volkswagen',
+      mercedes: 'Mercedes',
+      ds: 'DS',
     },
     selectedModels: '',
     modelsList: {

@@ -2,7 +2,7 @@
   <main class="bg-background pl-16 pr-10 py-5 min-h-screen">
     <v-car-card
       v-for="car in carList"
-      :key="car.id"
+      :key="car.id + car.infosList.brand"
       :infos-list="car.infosList"
       :image="car.image"
     />
