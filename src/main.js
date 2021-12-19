@@ -1,7 +1,11 @@
+import './assets/tailwind.css'
+import './assets/global.scss'
+
 import Vue from 'vue'
 import App from './App.vue'
-import './assets/tailwind.css'
+import VueFormulate from '@braid/vue-formulate'
 
+Vue.use(VueFormulate)
 Vue.config.productionTip = false
 
 new Vue({
